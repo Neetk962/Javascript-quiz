@@ -15,7 +15,7 @@ Screenshot![Screenshot 2023-08-31 134130](https://github.com/Neetk962/Portfolio-
 
 
 User website, navigate to the website and view my portfolio. 
-Deployed link: https://neetk962.github.io/Portfolio-Project-Ravneet/
+Deployed link: https://neetk962.github.io/Javascript-quiz/
 
 
 ## Credits:

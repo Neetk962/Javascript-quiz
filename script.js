@@ -1,9 +1,24 @@
-var timer2=10
+var timer2=50
+var score=0
+var score2= document.querySelector("#score2");
 
 var timer = document.querySelector("#timer");
 var index = -1
 
+function endgame () {
+    //local storage
+    var initial=prompt("please enter initials")
+    var user={
+        initial:initial, score:score
 
+    }
+var json = JSON.stringify(user);
+localStorage.setItem("scores", json);
+console.log('user added');
+
+    window.location.href="scores.html"
+
+}
 
 
 function timerfunction ( ){
@@ -12,6 +27,8 @@ function timerfunction ( ){
 
        timer.textContent= "timer "+ timer2
        if (timer2 < 1) {
+
+        endgame()
         
 clearInterval (interval)
     }
@@ -30,6 +47,7 @@ var question = document.querySelector("#question")
 
 function startgame ( ) {
     timerfunction()
+
     
 
 }
@@ -68,19 +86,45 @@ let questions = [
     }
 ]
 
-function nextquestion () {
+function nextquestion (event) {
+    if(event&&event.target.textContent==questions[index].correctAnswer) { 
+        score++
+
+    }
+    console.log(score)
+    score2.textContent= score
+   
     index++
+    if (index>=questions.length) {
+        endgame()
+
+    }
     button1.textContent=questions[index].answerkey[0]
     button2.textContent=questions[index].answerkey[1]
     button3.textContent=questions[index].answerkey[2]
     button4.textContent=questions[index].answerkey[3]
     question.textContent= questions[index].question
     
+   
 }
 
 startbutton.addEventListener("click", function() {
 startgame()
 startbutton.classList.add("hidden")
 nextquestion()
+
+button1.addEventListener("click", nextquestion )
+button2.addEventListener("click", nextquestion)
+button3.addEventListener("click", nextquestion)
+button4.addEventListener("click", nextquestion)
+
 }
 )
+//local storage
+var json = JSON.stringify(user);
+localStorage.setItem(username, json);
+console.log('user added');
+
+
+
+
