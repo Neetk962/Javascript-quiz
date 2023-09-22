@@ -4,11 +4,14 @@ var score2= document.querySelector("#score2");
 
 var timer = document.querySelector("#timer");
 var index = -1
+var user;
+var username;
+
 
 function endgame () {
     //local storage
     var initial=prompt("please enter initials")
-    var user={
+    user={
         initial:initial, score:score
 
     }
