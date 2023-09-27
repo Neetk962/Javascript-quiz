@@ -1,5 +1,7 @@
 # Javascript-quiz
-ortfolio project is designed so I can showcase and review samples of my work and show potential employers I am a valuable candidate with previous experience. 
+
+A resource to help students prepare, we’ve developed a set of technical interview questions that can students can answer throughout the time they are learning Javascript to help prepare students for the difficult level of questions. 
+
 
 
 
@@ -8,13 +10,11 @@ ortfolio project is designed so I can showcase and review samples of my work and
 
 
 ## Usage:
+
+
+Please see screenshot!
 ![image](https://github.com/Neetk962/Javascript-quiz/assets/131637944/71684737-24ab-4df2-870c-b482167cb94f)
 
-
-
-
-
-User website, navigate to the website and view my portfolio. 
 Deployed link: https://neetk962.github.io/Javascript-quiz/
 
 
